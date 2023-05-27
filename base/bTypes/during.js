@@ -5,7 +5,7 @@ class during extends block{
         super("during","during",{"PHASES":[YDP,YSP,YBP,YPP,ODP,OSP,OBP,OPP]});
     }
     costCal(card,deck){
-        weights = [1.2, 1.5, 1.2, 1.2,
+        let weights = [1.2, 1.5, 1.2, 1.2,
                     2.2, 2.5, 2.2, 2.2];
         let cost = 1;
         this.slots.PHASES.forEach((element,index) => {

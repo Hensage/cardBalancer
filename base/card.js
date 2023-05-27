@@ -11,7 +11,7 @@ class card{
     costCal(deck,free,negated){
         let cost=this.atk+this.def+1;
         if (!free){
-            cost= cost/this.trib;
+            cost= cost/(this.trib+1);
         }
         if (!negated){
             cost = cost+this.effect.costCal(this,deck);
