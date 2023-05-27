@@ -1,0 +1,2 @@
+Effect =  during + trigger + condition + action
+condition = condition

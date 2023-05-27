@@ -1,0 +1,33 @@
+{"effect":{"slots":{
+        "during":{"options":{"YDP":{"cost":1.2},"YSP":{"cost":1.5},"YBP":{"cost":1.2},"YPP":{"cost":1.2},
+                    "ODP":{"cost":2.2},"OSP":{"cost":2.5},"OBP":{"cost":2.2},"OPP":{"cost":2.2}},
+        "allow":"ONE+"},
+        "trigger":{
+            "onSummon":{"slots":{"type":{"options":{"Normal":{},"Free":{}},
+                            "allow":"ONE+"},
+                        "cardData":{"options":"CARDDATAOBJECT",
+                            "allow":"ONE"}
+                        },
+                        "cost":1.5},
+            "onDestroy":{"slots":{"type":{"options":{"Battle":{},"Effect":{}},
+                                "allow":"ONE+"},
+                            "cardData":{"options":"CARDDATAOBJECT",
+                                "allow":"ONE"}
+                        },
+                        "cost":1.3},
+            "onBattle":{"slots":{"cardData":{"options":"CARDDATAOBJECT",
+                                    "allow":"ONE"}
+                            },
+                            "cost":1},
+            "onTributed":{"slots":{"cardData":{"options":"CARDDATAOBJECT",
+            "allow":"ONE"}
+    },
+    "cost":1},
+            "Activate":{}}
+    ,"allow":"ONE"},
+    "condition":[]
+    ,"allow":"ANY"},
+    "action":[{"gainATK":[]}
+    ],
+    "allow":"ONE"}
+]}
