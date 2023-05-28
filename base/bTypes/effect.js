@@ -1,7 +1,14 @@
 block = require("../block")
+during = require("./during")
 class effect extends block{
-    constructor(id,during,trigger,conditions,action){
-        super(id,"effect",{"DURING":during,"TRIGGER":trigger,"COND":conditions,"ACTION":action});
+    constructor(){
+        super("effect","effect",{"DURING":new during(),"TRIGGER":undefined,"COND":undefined,"ACTION":undefined});
+    }
+    setTrigger(trig){
+        this.slots.TRIGGER = trig;
+    }
+    setAction(act){
+        this.slots.ACTION = act;
     }
     costCal(card,deck){
         //ADD IN CONDITIONS

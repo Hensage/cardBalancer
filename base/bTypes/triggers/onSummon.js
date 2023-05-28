@@ -1,10 +1,19 @@
+const cardData = require("../cardData");
 trigger = require("../trigger")
+cardData
 class onSummon extends trigger{
     // NOR : Boolean
     // FREE : Boolean
     // cardData : object
-    constructor(NOR,FREE,cardData){
-        super("onSummon",{"METHOD":[NOR,FREE],"CARDDATA":cardData});
+    constructor(){
+        super("onSummon",{"METHOD":[true,true],"CARDDATA":new cardData()});
+    }
+    setMethod(meths){
+        if (meths.length == 2){
+            this.slots.METHOD = meths;
+            return true;
+        }
+        return false;
     }
     costCal(card,deck){
         let cost= 1;
