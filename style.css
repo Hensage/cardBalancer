@@ -1,0 +1,37 @@
+#card{
+    width:30vw;
+    height: min(45vw, 95vh);
+    margin:0vh 35vw;
+    background-color: rgb(204, 170, 156);
+    border-radius: 1em;
+    border-color: rgb(156, 138, 131);
+    border-width: 0.5em;
+    border-style: solid;
+    flex-direction: column;
+    display: flex;
+}
+#nameSection{
+    margin: 1vw 1vw 0.5vw 1vw;
+    width: 28vw;
+    height: 4vw;
+    background-color: rgb(230, 202, 191);
+}
+#image{
+    margin: 0.5vw 1vw 1vw 1vw;
+    width: 28vw;
+    height: 15vw;
+    background-color: black;
+}
+#effSection{
+    margin: 0.5vw 1vw 1vw 1vw;
+    width: 28vw;
+    height: 22vw;
+    background-color: rgb(230, 202, 191);
+}
+.eff{
+    text-align: center;
+    margin: 0.5vw 1vw 0.5vw 1vw;
+    width: 26vw;
+    height: 6vw;
+    background-color: rgb(188, 112, 112);
+}
